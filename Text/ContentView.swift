@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    let mensaje = "Bienvenido a SwiftUI"
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+           Text("Hola, Max!")
+                .font(.largeTitle)
+                .foregroundColor(.blue)
+                .bold()
+                .multilineTextAlignment(.center)
+            Text("\(mensaje)")
+                .font(.title)
+                .foregroundColor(.gray)
+                .italic()
+                .padding()
+            Text("Aprendamos juntos!")
+                .font(.footnote)
+                .foregroundColor(.green)
+                .underline()
+            Text("Nunca pares de aprender")
+                .foregroundColor(.red)
+                .font(.body)
+                . multilineTextAlignment(.center)
+            
         }
+       
         .padding()
     }
 }
