@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    let mensaje = "Bienvenido a SwiftUI"
+    let mensaje = "Bienvenido a XCode"
     
     var body: some View {
         VStack {
-           Text("Hola, Max!")
+           Text("Hola, Benja!")
                 .font(.largeTitle)
                 .foregroundColor(.blue)
                 .bold()
