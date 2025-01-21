@@ -12,6 +12,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Text("Hola, Max!")
+                .font(.custom("Roboto-Light", size: 20))
+                .padding()
            Text("Hola, Benja!")
                 .font(.largeTitle)
                 .foregroundColor(.blue)
