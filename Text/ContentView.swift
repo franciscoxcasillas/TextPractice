@@ -33,7 +33,27 @@ struct ContentView: View {
                 .foregroundColor(.red)
                 .font(.body)
                 . multilineTextAlignment(.center)
+            Button(action: {
+                print("Button tapped!")
+            }) {
+                Label("Tap Me", systemImage: "hand.thumbsup.fill")
+            }
+            Button(action: {
+                print("Styled button pressed!")
+            }) {
+                Text("Custom Button")
+                    
+            }
+            .buttonStyle(.plain)
             
+            Button(action: {
+                print("Image button pressed!")
+            }) {
+                Image(systemName: "star.fill")
+                    .font(.largeTitle)
+                    .foregroundColor(.yellow)
+            }
+
         }
        
         .padding()
